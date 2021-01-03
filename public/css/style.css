@@ -3,8 +3,8 @@
     src: url(../fonts/bahnschrift.ttf) format("truetype");
 }
 
-*{
-  font-family: bahnschrift;
+* {
+    font-family: bahnschrift;
 }
 
 body {
@@ -13,9 +13,10 @@ body {
 }
 
 .header {
-    font-size: 25px;
+    font-size: 20px;
     text-align: center;
     background-color: #efff1c;
+    margin-bottom: 50px;
 }
 
 .header * {
@@ -29,11 +30,71 @@ body {
 }
 
 .header > h1 {
-    padding-top: 300px;
+    padding-top: 150px;
 }
 
 .main {
-    font-size: 25px;
-    text-align: center;
+    font-size: 15px;
     color: white;
+}
+
+.wrap {
+    width: 330px;
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 560px) {
+    .wrap {
+        width: 450px;
+    }
+
+    .header {
+        font-size: 25px;
+    }
+}
+
+@media screen and (min-width: 672px) {
+    .wrap {
+        width: 550px;
+    }
+}
+
+@media screen and (min-height: 530px) and (min-width: 560px) {
+    .header > h1 {
+        padding-top: 300px;
+    }
+}
+
+.search {
+    width: auto;
+    position: relative;
+    display: flex;
+    margin: 0 auto;
+}
+
+.searchTerm {
+    width: 100%;
+    border: 3px solid #efff1c;
+    border-right: none;
+    padding: 5px;
+    height: 20px;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    color: dimgray;
+}
+
+.searchTerm:focus {
+    color: black;
+}
+
+.searchButton {
+    width: 40px;
+    height: 36px;
+    border: 1px solid #efff1c;
+    background: #efff1c;
+    text-align: center;
+    color: black;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 20px;
 }
