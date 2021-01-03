@@ -1,8 +1,39 @@
-div.telo {margin: auto; box-shadow: 3px 3px 3px #e0e0e0; border: 1px solid #f0f0f0; padding: 1em; max-width: 50em;}
-h1 {color: #800000; text-align: center; text-shadow: 2px 2px #e0e0e0;}
-p {text-indent: 1em; text-align: justify;}
-object.ptacek {width: 20em; height: 12em; margin: auto; display: block;}
-div#prepinac, div#prepinac-zpet {text-align: center; visibility: hidden;}
-div#prepinac a, div#prepinac-zpet a {color: inherit; text-decoration: underline;}
-video.sloupek {margin: auto; cursor: pointer;}
-.sloupek-kontejner {display: none; text-align: center;}
+@font-face {
+    font-family: bahnschrift;
+    src: url(../fonts/bahnschrift.ttf) format("truetype");
+}
+
+*{
+  font-family: bahnschrift;
+}
+
+body {
+    margin: 0;
+    background-color: #131419;
+}
+
+.header {
+    font-size: 25px;
+    text-align: center;
+    background-color: #efff1c;
+}
+
+.header * {
+    padding: 20px 10px;
+    margin: 0;
+}
+
+.header > img {
+    width: 92px;
+    float: left;
+}
+
+.header > h1 {
+    padding-top: 300px;
+}
+
+.main {
+    font-size: 25px;
+    text-align: center;
+    color: white;
+}
